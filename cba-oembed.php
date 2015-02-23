@@ -5,7 +5,7 @@
 	Plugin URI: https://cba.fro.at
 	Description: Makes it easier to embed content from the Cultural Broadcasting Archive
 	Author: Thomas Diesenreiter and Ingo Leindecker
-	Version: 1.0.0
+	Version: 1.1.0
 	Author URI: http://cba.fro.at
 	
   This program is free software; you can redistribute it and/or modify
@@ -23,6 +23,6 @@
 
 */
 
-wp_oembed_add_provider( 'http://cba.fro.at/*', 'http://cba.fro.at/?oembed=true' );
+wp_oembed_add_provider( '#https?://(www\.)?cba\.fro\.at/.*#i', 'https://cba.fro.at/?oembed=true', true );
 
 ?>
